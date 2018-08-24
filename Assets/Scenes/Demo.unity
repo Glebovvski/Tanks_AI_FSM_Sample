@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 1163097490}
   - component: {fileID: 1163097492}
   - component: {fileID: 1163097491}
+  - component: {fileID: 1163097493}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Player
@@ -603,7 +604,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163097486}
-  m_Mesh: {fileID: 4300000, guid: 7f89a4907a7406a4ca320fc27a7edb45, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 598b61216144e0042905e588f0ee6b17, type: 3}
 --- !u!65 &1163097490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -644,6 +645,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1163097493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163097486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21b7a3c2667ef249a82b8c60984a19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aspectName: 1
 --- !u!1 &1171499107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,8 +1068,6 @@ GameObject:
   - component: {fileID: 1876867370}
   - component: {fileID: 1876867368}
   - component: {fileID: 1876867371}
-  - component: {fileID: 1876867372}
-  - component: {fileID: 1876867373}
   m_Layer: 0
   m_Name: AI_Character
   m_TagString: Untagged
@@ -1139,36 +1150,12 @@ BoxCollider:
 --- !u!114 &1876867371
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 11400002, guid: 1b3c673ca560fea47a51a9392ade86e9,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876867366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929100bae651f9b4e8697197df8dbf4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1876867372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 11400004, guid: 1b3c673ca560fea47a51a9392ade86e9,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876867366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e18de0db2fca4910b87ba25245496b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1876867373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876867366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e694ce0ed484740b447a42d5822e13, type: 3}
+  m_Script: {fileID: 11500000, guid: 411ffe765ea03f74288de7457c9d0613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1954060881
