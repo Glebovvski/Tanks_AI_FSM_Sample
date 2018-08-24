@@ -24,14 +24,12 @@ public class Wander : MonoBehaviour {
     private void Update()
     {
         if(Vector3.Distance(tarPos, transform.position) <= 5.0f)
-        {
             GetNextPosition();
 
-            Quaternion tarRot = Quaternion.LookRotation(tarPos-transform.position);
+        Quaternion tarRot = Quaternion.LookRotation(tarPos - transform.position);
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, tarRot, rotSpeed * Time.deltaTime);
-            transform.Translate(new Vector3(0, 0, movementSpeed * Time.deltaTime));
-        }
+        transform.rotation = Quaternion.Slerp(transform.rotation, tarRot, rotSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(0, 0, movementSpeed * Time.deltaTime));
     }
 
     void GetNextPosition()
