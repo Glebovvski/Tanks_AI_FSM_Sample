@@ -36,7 +36,9 @@ public class Perspective : Sense {
                 if (aspect != null)
                 {
                     if (aspect.aspectName == aspectName)
+                    {
                         print("Enemy Detected");
+                    }
                 }
             }
         }

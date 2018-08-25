@@ -766,7 +766,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1181073512}
   - component: {fileID: 1181073513}
-  - component: {fileID: 1181073514}
   m_Layer: 0
   m_Name: Sensor
   m_TagString: Untagged
@@ -801,18 +800,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14.4, y: 1, z: 6.6}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1181073514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 11400000, guid: 1b3c673ca560fea47a51a9392ade86e9,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1181073511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e694ce0ed484740b447a42d5822e13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1432296353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1055,8 @@ GameObject:
   - component: {fileID: 1876867370}
   - component: {fileID: 1876867368}
   - component: {fileID: 1876867371}
+  - component: {fileID: 1876867372}
+  - component: {fileID: 1876867373}
   m_Layer: 0
   m_Name: AI_Character
   m_TagString: Untagged
@@ -1142,10 +1131,10 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876867366}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 14, y: 1, z: 6}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1876867371
 MonoBehaviour:
@@ -1158,6 +1147,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411ffe765ea03f74288de7457c9d0613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1876867372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876867366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf36d6a88255b94d968c5ab0ef5319d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bDebug: 1
+  aspectName: 1
+  detectionRate: 1
+  FieldofView: 45
+  ViewDistance: 100
+--- !u!114 &1876867373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876867366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edc9aedc117cb54bb5c24d281a69e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bDebug: 1
+  aspectName: 1
+  detectionRate: 1
 --- !u!1 &1954060881
 GameObject:
   m_ObjectHideFlags: 0
