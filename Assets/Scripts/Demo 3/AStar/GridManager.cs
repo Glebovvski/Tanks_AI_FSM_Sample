@@ -58,8 +58,7 @@ public class GridManager : MonoBehaviour {
                 int indexCell = GetGridIndex(data.transform.position);
                 int col = GetColumn(indexCell);
                 int row = GetRow(indexCell);
-                if (row < numOfRows && col < numOfColumns)
-                    nodes[row, col].MarkAsObstacle();
+                nodes[row, col].MarkAsObstacle();
             }
         }
     }
