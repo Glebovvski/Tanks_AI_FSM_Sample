@@ -36,6 +36,16 @@ public class FlockController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Vector3 center = Vector3.zero;
+        Vector3 velocity = Vector3.zero;
+
+        foreach (Flock flock in flockList)
+        {
+            center += flock.transform.localPosition;
+            velocity += flock.GetComponent<Rigidbody>().velocity;
+        }
+
+        flockCenter = center / flockSize;
+        flockVelocity = velocity / flockSize;
 	}
 }
