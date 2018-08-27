@@ -348,4 +348,4 @@ MonoBehaviour:
   animator: {fileID: 0}
   fireSpeed: 3
   muzzle: {fileID: 475962}
-  projectile: {fileID: 0}
+  projectile: {fileID: 130886, guid: 288ad8d48ff6a154abb2c9c74b174546, type: 2}
