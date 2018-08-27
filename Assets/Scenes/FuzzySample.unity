@@ -1315,56 +1315,90 @@ MonoBehaviour:
   m_GameObject: {fileID: 1230296403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612e8e2a11fae1349abefa6159520d24, type: 3}
+  m_Script: {fileID: 11500000, guid: 04588c33fa906584c82f7db593849d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   critical:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
-      value: 1
-      inSlope: -0.025
-      outSlope: -0.025
-      tangentMode: 10
-    - time: 40
-      value: 0
-      inSlope: -0.025
-      outSlope: -0.025
-      tangentMode: 10
+    - serializedVersion: 3
+      time: 0.014556309
+      value: 0.999274
+      inSlope: -0.22738452
+      outSlope: -0.22738452
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0388184
+      value: 0.7663727
+      inSlope: -0.22738452
+      outSlope: -0.22738452
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   hurt:
+    serializedVersion: 2
     m_Curve:
-    - time: 20
-      value: 0
-      inSlope: 0.05
-      outSlope: 0.05
-      tangentMode: 10
-    - time: 40
+    - serializedVersion: 3
+      time: 0
       value: 1
-      inSlope: 0.05
-      outSlope: -0.025
-      tangentMode: 21
-    - time: 80
-      value: 0
-      inSlope: -0.025
-      outSlope: -0.025
-      tangentMode: 10
+      inSlope: 0.15128185
+      outSlope: 0.15128185
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48749998
+      value: 1.0737499
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.14390223
+      outSlope: -0.14390223
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   healthy:
+    serializedVersion: 2
     m_Curve:
-    - time: 60
+    - serializedVersion: 3
+      time: 0
       value: 0
-      inSlope: 0.025
-      outSlope: 0.025
-      tangentMode: 10
-    - time: 100
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
       value: 1
-      inSlope: 0.025
-      outSlope: 0.025
-      tangentMode: 10
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   healthInput: {fileID: 695621082}
   healthyLabel: {fileID: 2120089140}
   hurtLabel: {fileID: 1717017822}
