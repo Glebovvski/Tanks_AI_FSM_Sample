@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3377746}
   - component: {fileID: 13514900}
   - component: {fileID: 2338570}
-  - component: {fileID: 11403860}
   - component: {fileID: 5421434}
+  - component: {fileID: 114701531414056576}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 611.67957, y: 411.06378, z: -1363.5685}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,18 +90,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11403860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38ff26c6e37a2e84798cf742f79e6741, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 137274, guid: 9aa1072ef4c3cb54eabdfe6e912cc367, type: 2}
 --- !u!135 &13514900
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -133,3 +121,15 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130886}
   m_IsPrefabAsset: 1
+--- !u!114 &114701531414056576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742425843c8649f41adfa7a6828287fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 137274, guid: 9aa1072ef4c3cb54eabdfe6e912cc367, type: 2}
