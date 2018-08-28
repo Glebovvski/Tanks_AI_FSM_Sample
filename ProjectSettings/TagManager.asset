@@ -9,6 +9,7 @@ TagManager:
   - End
   - Environment
   - Projectile
+  - GameOver
   layers:
   - Default
   - TransparentFX

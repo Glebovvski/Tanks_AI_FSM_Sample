@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Tank : MonoBehaviour
@@ -29,6 +30,8 @@ public class Tank : MonoBehaviour
     [SerializeField]
     private GameObject shield;
 
+    private GameObject gameOver;
+
     [SerializeField]
     private Text shieldValue;
     [SerializeField]
@@ -53,11 +56,23 @@ public class Tank : MonoBehaviour
         boostAmount = 3;
         shieldValue.text = shieldAmount.ToString();
         boostValue.text = boostAmount.ToString();
+        gameOver = GameObject.FindGameObjectWithTag("GameOver");
+        gameOver.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (health == 0)
+        {
+            Time.timeScale = 0;
+            gameOver.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Time.timeScale = 1;
+            }
+        }
         if (Input.GetKeyDown(KeyCode.B))
         {
             if (boostAmount > 0)
