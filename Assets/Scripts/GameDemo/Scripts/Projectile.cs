@@ -20,6 +20,8 @@ public class Projectile : MonoBehaviour {
                 return;
             GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             Destroy(this.gameObject);
+            if (other.tag == "Player")
+                other.GetComponent<Tank>().Shooted();
         }
     }
 }
