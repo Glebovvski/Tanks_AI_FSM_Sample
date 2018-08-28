@@ -10,6 +10,7 @@ TagManager:
   - Environment
   - Projectile
   - GameOver
+  - GameWon
   layers:
   - Default
   - TransparentFX

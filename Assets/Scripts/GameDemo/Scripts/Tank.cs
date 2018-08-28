@@ -49,6 +49,7 @@ public class Tank : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        transform.position = new Vector3(Random.Range(-13, 13), 0.5f, -1);
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(goal.position);
         health = 5;
